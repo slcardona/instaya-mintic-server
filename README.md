@@ -124,3 +124,6 @@ Para realizar el despliegue estaremos siguiendo paso a paso las [instrucciones e
 4. Una vez haya terminado el despliegue ejecutaremos `fly status` para revisar el estado de nuestro despliegue
 5. Finalmente ejecutaremos `fly open` para ver la URL de nuestra API
    - Es posible que al abrir la url nos salte un error, pero si nos dirigimos a ['/api'](https://insta-ya-server.fly.dev/api) podremos ver el mensaje de "hola mundo" que tenemos configurado
+
+## Actualización de pedido
+Se crea el esquema UpdateRequestSchema de tal forma que los valores default de la actualización correspondan al pedido del usuario, se crean 2 rutas, una put para actualizar la base de datos mongoose y una get para encontrar el pedido
